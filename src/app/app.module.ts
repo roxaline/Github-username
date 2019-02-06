@@ -7,6 +7,8 @@ import { GithubFormComponent } from './github-form/github-form.component';
 import { GithubComponent } from './github/github.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
+import {AlertsService} from './alert-service/alerts.service'
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { DateCountPipe } from './date-count.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AlertsService], // Add service to providers
   bootstrap: [AppComponent]
 })
 export class AppModule { }
