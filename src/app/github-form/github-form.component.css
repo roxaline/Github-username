@@ -1,2 +1,6 @@
 .container {background-color: maroon }
-.jumbotron{background-color: rosybrown}
+.jumbotron{background-color:gray}
+h3{
+  color: wheat;
+  font-style: italic;
+}
